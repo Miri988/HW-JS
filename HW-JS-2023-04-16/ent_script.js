@@ -84,6 +84,10 @@ const animals = {
    },
 };
 
+animals.getAnimalName = function(animalType){
+   return this[animalType] !==undefined ? this[animalType].name : "Не существует"
+}
+
 if (animals.bird === undefined) {
    console.log('Не существует');
 } else {
