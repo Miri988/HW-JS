@@ -69,8 +69,9 @@
 
 (function () {
     let str = prompt ("Введите строку", 'str');
-    let arrStr = str.toLowerCase().split('');
-    if (arrStr === arrStr.reverse()) {
+    let arrStr = str.toLowerCase();
+    let arrStrRev = str.toLowerCase().split('').reverse().join('');
+    if (arrStr === arrStrRev) {
         alert('Слово является палиндромом');
     } else {
         alert('Слово не является палиндромом');
